@@ -1,0 +1,35 @@
+{
+	"jobs_number": 3,
+	"jobs_graph": [
+		[2],
+		[3],
+		[]
+	],
+	"mutex_names": ["first", "second"],
+	"jobs_description": [
+        {
+			"script":"sleep_rng.py",
+			"mutex":"first"
+		},
+		{
+			"script":"rng.py"
+		},
+		{
+			"script":"rng.py"
+		},
+		{
+			"script":"rng.py"
+		},
+		{
+			"script":"add.py",
+			"mutex":"first"
+		},
+		{
+			"script":"add.py",
+			"mutex":"first"
+		},
+		{
+			"script":"add.py"
+		}
+	]
+}
